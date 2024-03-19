@@ -24,8 +24,10 @@ WHEN user choses not to add more employees
 THEN EMPLOYEES data will be displayed
 ```
 
-## Acceptance Criteria
+## links
 
 ```
+Rep : https://github.com/usachdeva/Employee-Payroll
 
+Deployment : https://usachdeva.github.io/Employee-Payroll/
 ```
