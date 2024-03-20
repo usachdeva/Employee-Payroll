@@ -53,10 +53,10 @@ const displayAverageSalary = function (employeesArray) {
 
   // average of employees
   let avgSalary = (sum / employeesArray.length).toFixed(2);
-  let avgSalaryText = console.log(`The average salary : ${avgSalary}`);
+  let avgSalaryText = console.log(`The average salary : $${avgSalary}`);
 
   // displaying average salary on the screen
-  h2.textContent = `The average salary : ${avgSalary}`;
+  h2.textContent = `The average salary : $${avgSalary}`;
   h2.setAttribute("style", "color:green;");
   document.querySelector(".card-body").appendChild(h2);
 
