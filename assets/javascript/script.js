@@ -74,9 +74,8 @@ const getRandomEmployee = function (employeesArray) {
   let rando = Math.floor(Math.random() * employeesArray.length);
   let randomEmp = employeesArray[rando];
 
-  console.log(`The data for the employee is : `);
   console.log(
-    `first name - "${randomEmp.firstName}", last name - "${randomEmp.lastName}" with salary of $${randomEmp.salary}`
+    `Congratulations to : "${randomEmp.firstName} ${randomEmp.lastName} with salary of $${randomEmp.salary}", our random drawing winner`
   );
 };
 
