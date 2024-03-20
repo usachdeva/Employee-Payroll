@@ -34,6 +34,4 @@ Deployment : https://usachdeva.github.io/Employee-Payroll/
 
 ## Screenshot
 
-```
-![alt text](screenshot.png)
-```
+![alt text](assets/images/screenshot.png)
