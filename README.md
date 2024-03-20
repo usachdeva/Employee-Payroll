@@ -31,3 +31,9 @@ Rep : https://github.com/usachdeva/Employee-Payroll
 
 Deployment : https://usachdeva.github.io/Employee-Payroll/
 ```
+
+## Screenshot
+
+```
+![alt text](screenshot.png)
+```

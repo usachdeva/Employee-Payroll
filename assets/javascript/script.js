@@ -3,6 +3,9 @@ const addEmployeesBtn = document.querySelector("#add-employees-btn");
 
 let employeesArray = [];
 
+let h2 = document.createElement("h2");
+let h3 = document.createElement("h3");
+
 // Collect employee data
 const collectEmployees = function () {
   // TODO: Get user input to create and return an array of employee objects
@@ -21,7 +24,7 @@ const collectEmployees = function () {
     if (salary > 0) {
       salary = salary;
     } else {
-      salary = NaN;
+      salary = 0;
     }
 
     employeesArray.push({ firstName, lastName, salary });
@@ -49,7 +52,20 @@ const displayAverageSalary = function (employeesArray) {
   console.log(sum);
 
   // average of employees
-  console.log(`The average salary : ${sum / employeesArray.length}`);
+  let avgSalary = (sum / employeesArray.length).toFixed(2);
+  let avgSalaryText = console.log(`The average salary : ${avgSalary}`);
+
+  // displaying average salary on the screen
+  h2.textContent = `The average salary : ${avgSalary}`;
+  h2.setAttribute("style", "color:green;");
+  document.querySelector(".card-body").appendChild(h2);
+
+  // displaying total employees on the screen
+  count = employeesArray.length;
+  console.log(`The total number of employees : ${count}`);
+  h3.textContent = `The total number of employees : ${count}`;
+  h3.setAttribute("style", "color:red;");
+  document.querySelector(".card-body").appendChild(h3);
 };
 
 // Select a random employee
