@@ -46,14 +46,14 @@ const displayAverageSalary = function (employeesArray) {
   let sum = 0;
 
   // sum of salaries
-  employeesArray.forEach((element) => {
-    sum += element.salary;
-  });
-  console.log(sum);
+  for (let employee of employeesArray) {
+    sum += employee.salary;
+  }
 
   // average of employees
   let avgSalary = (sum / employeesArray.length).toFixed(2);
-  let avgSalaryText = console.log(`The average salary : $${avgSalary}`);
+  let count = employeesArray.length;
+  console.log(`The average salary of ${count} employess is : $${avgSalary}`);
 
   // displaying average salary on the screen
   h2.textContent = `The average salary : $${avgSalary}`;
@@ -61,7 +61,6 @@ const displayAverageSalary = function (employeesArray) {
   document.querySelector(".card-body").appendChild(h2);
 
   // displaying total employees on the screen
-  count = employeesArray.length;
   console.log(`The total number of employees : ${count}`);
   h3.textContent = `The total number of employees : ${count}`;
   h3.setAttribute("style", "color:red;");
